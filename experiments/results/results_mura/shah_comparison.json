@@ -1,0 +1,19 @@
+{
+ "source": "printed output of Kaggle notebook mabsurahahadroja/mura-generalization, Version 1 (4h54m08s); copied verbatim",
+ "accuracy": {
+  "estimate": 0.9746637472630592,
+  "ci_low": 0.9663313181577261,
+  "ci_high": 0.9817742346847138,
+  "boot_std": 0.0037743480986519866,
+  "n_patients": 783,
+  "n_boot": 2000
+ },
+ "macro_f1": {
+  "estimate": 0.9707421539685923,
+  "ci_low": 0.961567758729121,
+  "ci_high": 0.9787690807998224,
+  "boot_std": 0.004314307330453696,
+  "n_patients": 783,
+  "n_boot": 2000
+ }
+}

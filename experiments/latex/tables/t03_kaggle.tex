@@ -1,0 +1,18 @@
+\setcounter{table}{2}
+\begin{table}[!ht]\centering\small
+\caption{Kaggle UNIFESP private score vs. the competition leaderboard}\label{tab:kaggle}
+\resizebox{\ifdim\width>\textwidth\textwidth\else\width\fi}{!}{\begin{tabular}{p{0.64\textwidth}cc}
+\toprule
+\textbf{entry} & \textbf{private score} & \textbf{public score} \\
+\midrule
+1st place & 0.93378 & n/a \\
+2nd place (ResNet50/152, FastAI) & 0.92787 & n/a \\
+ours: stage-2 union (late submission) & 0.92638 & 0.93378 \\
+ours: stage-1 ensemble (late submission) & 0.92563 & 0.92704 \\
+3rd place & 0.92488 & n/a \\
+4th place & 0.92414 & n/a \\
+5th place & 0.92182 & n/a \\
+\bottomrule
+\end{tabular}}
+\par\smallskip{\footnotesize Mean F1 (sample-wise); private score uses \textasciitilde{}60 \% of the test set with the original (partly noisy) labels, so differences of \textasciitilde{}0.003 are within noise. Late submissions are not listed on the leaderboard; we report every submission we made. Public scores of other teams are not shown (n/a).}
+\end{table}

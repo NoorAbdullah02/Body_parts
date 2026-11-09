@@ -1,0 +1,9 @@
+source,target,head,groups,n,accuracy,ci,macro_f1
+mura,unifesp,softmax,"elbow,finger,forearm,hand,shoulder,wrist",184,0.8750,"[0.826, 0.924]",0.8478
+mura,unifesp,sigmoid,"elbow,finger,forearm,hand,shoulder,wrist",184,0.8804,"[0.837, 0.924]",0.8560
+unifesp,mura,softmax,"elbow,finger,forearm,hand,shoulder,wrist",12000,0.8133,"[0.806, 0.820]",0.7444
+unifesp,mura,sigmoid,"elbow,finger,forearm,hand,shoulder,wrist",12000,0.8208,"[0.814, 0.828]",0.7481
+mura,fracatlas,softmax,"hand,shoulder",1382,0.6910,"[0.667, 0.715]",0.5606
+mura,fracatlas,sigmoid,"hand,shoulder",1382,0.8575,"[0.840, 0.875]",0.7115
+unifesp,fracatlas,softmax,"hand,hip,leg,shoulder",3685,0.7080,"[0.693, 0.722]",0.7409
+unifesp,fracatlas,sigmoid,"hand,hip,leg,shoulder",3685,0.6982,"[0.684, 0.713]",0.6990

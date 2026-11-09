@@ -1,0 +1,14 @@
+\section{Discussion}
+Evaluation mattered more than architecture here. Ensembling, fusion, heavy augmentation, extra seeds and pseudo-labelling each moved the held-out score by about 0.01 at most, none of them significantly, and seed noise was about as large. Papers that report differences of this size without intervals deserve some caution. It is a less exciting finding than a new architecture, but we think it is the more useful one.
+
+The paired intervals on the held-out set are between about ±0.007 and ±0.015 wide, so a gain of 0.03 would very likely have been detected, while gains of 0.01 or less can be neither confirmed nor ruled out with 323 images. For anyone reporting a body-part classifier, our numbers suggest a short list. Split by patient and say how. Choose every threshold, ensemble weight and checkpoint on out-of-fold predictions, and score the held-out set once. Resample patients, not images, when computing intervals, and test model differences with a paired bootstrap. The reason is visible in our own results: the leaky split moved the validation score by 0.0144, more than any architecture change we tried, and tuning thresholds on the held-out set added 0.0083, more than most of them.
+
+Most errors sit in the rare classes (1 to 6 held-out positives) and in the heterogeneous "Others" class. The Hip-to-Pelvis cluster in the audit, and the competition hosts' offline re-annotation of the test set, suggest that label noise sets part of the ceiling, as Langer et al. (2024) found on a hospital dataset. The label-efficiency curve was still rising, so more labelled data would probably help more than a different architecture.
+
+We did not test why the gate collapsed. One possibility is that a gate learned on the raw features of two networks with different activation scales lets one branch dominate. The learned weights point to a degenerate solution, not to complementary fusion, and fixed averaging was no worse.
+
+For clinical use, a router that answers 90 \% of the images keeps 94.5 \% top-1 accuracy and sends the other 10 \% to a person. The operating point chosen on OOF predictions should be re-validated on local data before anyone relies on it. We see the classifier as a way to flag suspicious metadata, not as a replacement for it.
+
+Our MURA accuracy is higher than the one published figure we found for this task. Other studies report 97 to 99 \% on other data and with much larger private training sets (Langer et al., 2024; Mitsuyama et al., 2026), and we do not claim to outperform them.
+
+

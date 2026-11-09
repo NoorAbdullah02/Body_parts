@@ -1,0 +1,15 @@
+\setcounter{table}{1}
+\begin{table}[!ht]\centering\small
+\caption{UNIFESP held-out performance (decisions made on out-of-fold predictions only)}\label{tab:main}
+\resizebox{\ifdim\width>\textwidth\textwidth\else\width\fi}{!}{\begin{tabular}{p{0.38\textwidth}cccc}
+\toprule
+\textbf{decoding} & \textbf{sample-mean F1} & \textbf{macro-F1} & \textbf{micro-F1} & \textbf{subset acc.} \\
+\midrule
+ensemble, threshold 0.5 & 0.9164 & 0.8537 & 0.9130 & 0.8885 \\
+ensemble, 0.5 + min-one & 0.9164 & 0.8537 & 0.9130 & 0.8885 \\
+ensemble, per-class thresholds tuned on OOF + min-one & 0.9189 [0.8669, 0.9602] & 0.8630 [0.6891, 0.8916] & 0.9148 & 0.8885 \\
+best single run by OOF (convnext\_tiny\_s256), 0.5 + min-one & 0.9123 & 0.8482 & 0.9070 & 0.8762 \\
+\bottomrule
+\end{tabular}}
+\par\smallskip{\footnotesize Held-out set: 323 images / 156 patients; 95 \% CIs by patient-level bootstrap. Ensemble minus best single: +0.0066 [-0.0002, +0.0142], p = 0.063. Ensemble weights fitted on OOF predictions (Caruana selection; the other two runs, Swin-T and DenseNet121, received weight 0): EfficientNetV2-S 0.10, ConvNeXt-T 0.27, ResNet50 (heavy augmentation) 0.29, EfficientNet-B3 0.34.}
+\end{table}

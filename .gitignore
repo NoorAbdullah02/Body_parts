@@ -1,0 +1,35 @@
+# Claude / Anthropic
+.claude/
+.claude*
+
+# Python & Environment
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv*/
+env/
+ENV/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Model checkpoints & cache
+*.pt
+*.pth
+*.ckpt
+*.bin
+image_cache/
+runs/*/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Heavy datasets and archives (>100MB or raw imaging data)
+Dataset.zip
+*.dcm
+*.png.mura
+zips/Dataset/

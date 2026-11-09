@@ -1,0 +1,19 @@
+\setcounter{table}{6}
+\begin{table}[!ht]\centering\small
+\caption{Zero-shot cross-dataset transfer through the class map}\label{tab:transfer}
+\resizebox{\ifdim\width>\textwidth\textwidth\else\width\fi}{!}{\begin{tabular}{lccccccc}
+\toprule
+\textbf{source} & \textbf{target} & \textbf{head} & \textbf{groups} & \textbf{n} & \textbf{accuracy} & \textbf{95 \% CI} & \textbf{macro-F1} \\
+\midrule
+mura & unifesp & softmax & elbow,finger,forearm,hand,shoulder,wrist & 184 & 0.875 & [0.826, 0.924] & 0.8478 \\
+mura & unifesp & sigmoid & elbow,finger,forearm,hand,shoulder,wrist & 184 & 0.8804 & [0.837, 0.924] & 0.856 \\
+unifesp & mura & softmax & elbow,finger,forearm,hand,shoulder,wrist & 12000 & 0.8133 & [0.806, 0.820] & 0.7444 \\
+unifesp & mura & sigmoid & elbow,finger,forearm,hand,shoulder,wrist & 12000 & 0.8208 & [0.814, 0.828] & 0.7481 \\
+mura & fracatlas & softmax & hand,shoulder & 1382 & 0.691 & [0.667, 0.715] & 0.5606 \\
+mura & fracatlas & sigmoid & hand,shoulder & 1382 & 0.8575 & [0.840, 0.875] & 0.7115 \\
+unifesp & fracatlas & softmax & hand,hip,leg,shoulder & 3685 & 0.708 & [0.693, 0.722] & 0.7409 \\
+unifesp & fracatlas & sigmoid & hand,hip,leg,shoulder & 3685 & 0.6982 & [0.684, 0.713] & 0.699 \\
+\bottomrule
+\end{tabular}}
+\par\smallskip{\footnotesize Closed-set decision among the shared groups; CIs are image-level (the targets have no patient ids). The class map is an assumption to be checked by a clinician.}
+\end{table}

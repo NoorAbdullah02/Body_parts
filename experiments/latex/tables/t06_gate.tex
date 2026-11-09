@@ -1,0 +1,16 @@
+\setcounter{table}{2}
+\begin{table}[!ht]\centering\small
+\caption{Mean weight given to the CNN branch by the fusion gate (5 folds)}\label{tab:gate}
+\resizebox{\ifdim\width>\textwidth\textwidth\else\width\fi}{!}{\begin{tabular}{p{0.38\textwidth}cccc}
+\toprule
+\textbf{config} & \textbf{mean} & \textbf{std} & \textbf{min} & \textbf{max} \\
+\midrule
+hybrid\_avg\_s224 & 0.5 & 0.0 & 0.5 & 0.5 \\
+hybrid\_cnn\_s224 & 1.0 & 0.0 & 1.0 & 1.0 \\
+hybrid\_gate\_ln\_s224 & 0.0029 & 0.003 & 0.0006 & 0.008 \\
+hybrid\_gate\_s224 & 0.0 & 0.0 & 0.0 & 0.0001 \\
+hybrid\_swin\_s224 & 0.0 & 0.0 & 0.0 & 0.0 \\
+\bottomrule
+\end{tabular}}
+\par\smallskip{\footnotesize hybrid\_avg is fixed at 0.5; hybrid\_cnn / hybrid\_swin are 1 / 0 by construction.}
+\end{table}

@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+title: "UNIFESP body-part benchmark: code and splits"
+message: "If you use this code, please cite the manuscript (details to be completed on acceptance)."
+authors:
+  - family-names: "TO BE COMPLETED"
+    given-names: "TO BE COMPLETED"
+license: "TO BE CHOSEN (code); datasets keep their own licences"

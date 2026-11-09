@@ -1,0 +1,13 @@
+true_class_missed,predicted_instead,count
+Others,Abdomen,6
+Others,Pelvis,4
+Chest,Abdomen,2
+Hip,Pelvis,2
+Forearm,Lower Leg,2
+Others,Lumbar Spine,2
+Others,Hip,1
+Abdomen,Lumbar Spine,1
+Elbow,Lower Leg,1
+Shoulder,Chest,1
+Others,Thoracic Spine,1
+Ankle,Wrist,1

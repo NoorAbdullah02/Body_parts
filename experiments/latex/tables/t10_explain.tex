@@ -1,0 +1,14 @@
+\setcounter{table}{4}
+\begin{table}[!ht]\centering\small
+\caption{Explainability: faithfulness (deletion test) and randomisation sanity check of Grad-CAM on the held-out set}\label{tab:explain}
+\resizebox{\ifdim\width>\textwidth\textwidth\else\width\fi}{!}{\begin{tabular}{lcccccccccc}
+\toprule
+\textbf{model} & \textbf{target layer} & \textbf{holdout sample F1(blend)} & \textbf{pairs} & \textbf{deletion CAM} & \textbf{deletion random grid} & \textbf{gain [95\% CI]} & \textbf{rho trained-vs-random} & \textbf{frac} & \textbf{rho} & \textbf{<0.3} \\
+\midrule
+convnext\_tiny\_s256 & body.norm\_pre & 0.9085 & 150 & 0.455 & 0.739 & 0.284 [0.252, 0.316] & 0.11 & 0.56 &  &  \\
+resnet50\_s256\_heavy & body.layer4 & 0.8972 & 150 & 0.426 & 0.63 & 0.204 [0.177, 0.231] & -0.314 & 0.38 &  &  \\
+swin\_tiny\_s224 & body.norm & 0.9028 & 150 & 0.755 & 0.92 & 0.164 [0.133, 0.197] & 0.02 & 0.67 &  &  \\
+\bottomrule
+\end{tabular}}
+\par\smallskip{\footnotesize gain = random-map deletion score minus CAM deletion score (> 0 and CI above 0 = the map points at pixels the model uses); rho = Spearman correlation of the CAM with the CAM of a randomly initialised model (low = passes). Grad-CAM grids are coarse and no localisation ground truth exists: say so.}
+\end{table}

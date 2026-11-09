@@ -1,0 +1,21 @@
+\setcounter{table}{8}
+\begin{table}[!ht]\centering\small
+\caption{UNIFESP dataset and split summary}\label{tab:dataset}
+\begin{tabular}{p{0.77\textwidth}c}
+\toprule
+\textbf{property} & \textbf{value} \\
+\midrule
+images / patients (train) & 1,738 / 768 \\
+test images / patients (labels hidden) & 743 / 330 \\
+classes & 22 (20 body parts + Others), multilabel \\
+single-label images & 92.4 \% \\
+image size & 256 x 256, DICOM; 95 \% MONOCHROME1 \\
+BodyPartExamined tag & empty in all 2,481 files \\
+annotators & radiology residents (four named in the dataset page), MD.ai platform; number of readers per image not stated \\
+licence & CC BY-NC-SA 4.0 \\
+held-out set & 323 images / 156 patients \\
+CV pool & 1,415 images / 612 patients, 5 folds \\
+\bottomrule
+\end{tabular}
+\par\smallskip{\footnotesize From the dataset page and our own analysis (results/eda).}
+\end{table}

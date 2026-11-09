@@ -1,0 +1,17 @@
+\setcounter{table}{5}
+\begin{table}[!ht]\centering\small
+\caption{MURA body-part classification: held-out = MURA validation set}\label{tab:mura}
+\resizebox{\ifdim\width>\textwidth\textwidth\else\width\fi}{!}{\begin{tabular}{p{0.64\textwidth}cc}
+\toprule
+\textbf{model} & \textbf{accuracy [95\% CI]} & \textbf{macro-F1 [95\% CI]} \\
+\midrule
+ours: 5-fold bagged ensemble (official MURA split) & 0.9747 [0.9663, 0.9818] & 0.9707 [0.9616, 0.9788] \\
+Xception-Swin (Shah 2026) & 0.9643 (CI n/a) & 0.9574 (CI n/a) \\
+DenseNet-201 & 0.9187 (CI n/a) & 0.9093 (CI n/a) \\
+EfficientNet-B0 & 0.9043 (CI n/a) & 0.8952 (CI n/a) \\
+ResNet-101 & 0.8934 (CI n/a) & 0.8831 (CI n/a) \\
+VGG-19 & 0.8612 (CI n/a) & 0.8498 (CI n/a) \\
+\bottomrule
+\end{tabular}}
+\par\smallskip{\footnotesize Shah et al. 2026 (results table in their paper; verified in the full text): same MURA validation set (3,197 images), fixed seed 42, image-level evaluation; no CI is shown for these body-part numbers.}
+\end{table}

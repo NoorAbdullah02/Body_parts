@@ -1,0 +1,63 @@
+{
+ "source": "printed output of the executed notebook (not the original file); runs: covid_swin_tiny_s224, covid_densenet121_s224; split is IMAGE-level (no patient ids)",
+ "chosen_variant": {
+  "covid_swin_tiny_s224": "sig_tta",
+  "covid_densenet121_s224": "sig_tta"
+ },
+ "weights": {
+  "covid_swin_tiny_s224": 0.5121951219512195,
+  "covid_densenet121_s224": 0.4878048780487805
+ },
+ "holdout": {
+  "n_images": 4233,
+  "n_patients": 4233,
+  "ens_0.5": {
+   "sample_mean_f1": 0.9639341680447279,
+   "macro_f1": 0.9691522372335901,
+   "micro_f1": 0.96262341325811,
+   "subset_accuracy": 0.9570044885424049
+  },
+  "ens_0.5_min_one": {
+   "sample_mean_f1": 0.9644066461926135,
+   "macro_f1": 0.969388752330775,
+   "micro_f1": 0.962867215041128,
+   "subset_accuracy": 0.9574769666902906
+  },
+  "ens_tuned_min_one": {
+   "sample_mean_f1": 0.9647216316245373,
+   "macro_f1": 0.9681092552655504,
+   "micro_f1": 0.9612421200093393,
+   "subset_accuracy": 0.9489723600283487
+  },
+  "ci_sample_mean_f1_tuned": {
+   "estimate": 0.9647216316245373,
+   "ci_low": 0.9595224033388455,
+   "ci_high": 0.9696826521773368,
+   "boot_std": 0.0025968726476949936,
+   "n_patients": 4233,
+   "n_boot": 2000
+  },
+  "ci_macro_f1_tuned": {
+   "estimate": 0.9681092552655504,
+   "ci_low": 0.9631432014931194,
+   "ci_high": 0.9727500119163135,
+   "boot_std": 0.002458357838444014,
+   "n_patients": 4233,
+   "n_boot": 2000
+  },
+  "best_single_by_oof": "covid_swin_tiny_s224",
+  "best_single_metrics": {
+   "sample_mean_f1": 0.9618080163792424,
+   "macro_f1": 0.9674330740914311,
+   "micro_f1": 0.9597653958944281,
+   "subset_accuracy": 0.9525159461374911
+  },
+  "paired_ens_vs_single_sample_f1": {
+   "diff": 0.002913615245294876,
+   "ci_low": 0.0006299708638474149,
+   "ci_high": 0.00527600598472322,
+   "p_value": 0.014,
+   "n_boot": 2000
+  }
+ }
+}

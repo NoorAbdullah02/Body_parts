@@ -1,0 +1,7 @@
+variant,oof_sample_f1,hold_sample_f1
+sig,0.9093,0.9089
+soft,0.8963,0.8947
+blend,0.9092,0.9142
+sig_tta,0.9069,0.9094
+soft_tta,0.8961,0.8947
+blend_tta,0.9089,0.9142

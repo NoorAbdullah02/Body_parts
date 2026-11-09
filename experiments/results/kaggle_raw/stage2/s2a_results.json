@@ -1,0 +1,74 @@
+{
+ "runs": [
+  "s2_convnext_tiny_s256_seed0",
+  "s2_convnext_tiny_s256_seed1",
+  "s2_resnet50_s256_heavy_seed0",
+  "s2_resnet50_s256_heavy_seed1",
+  "s2_efficientnet_b3_s256_hv_seed0",
+  "s2_efficientnet_b3_s256_hv_seed1",
+  "s2_efficientnetv2_s_s256_seed0",
+  "s2_densenet121_s256_seed0"
+ ],
+ "chosen_variant": {
+  "s2_convnext_tiny_s256_seed0": "sig",
+  "s2_convnext_tiny_s256_seed1": "blend",
+  "s2_resnet50_s256_heavy_seed0": "blend",
+  "s2_resnet50_s256_heavy_seed1": "blend",
+  "s2_efficientnet_b3_s256_hv_seed0": "blend_tta",
+  "s2_efficientnet_b3_s256_hv_seed1": "blend_tta",
+  "s2_efficientnetv2_s_s256_seed0": "blend_tta",
+  "s2_densenet121_s256_seed0": "blend"
+ },
+ "weights": {
+  "s2_convnext_tiny_s256_seed0": 0.0975609756097561,
+  "s2_convnext_tiny_s256_seed1": 0.12195121951219512,
+  "s2_resnet50_s256_heavy_seed0": 0.04878048780487805,
+  "s2_resnet50_s256_heavy_seed1": 0.2682926829268293,
+  "s2_efficientnet_b3_s256_hv_seed0": 0.07317073170731707,
+  "s2_efficientnet_b3_s256_hv_seed1": 0.04878048780487805,
+  "s2_efficientnetv2_s_s256_seed0": 0.21951219512195122,
+  "s2_densenet121_s256_seed0": 0.12195121951219512
+ },
+ "thresholds": [
+  0.5,
+  0.4635135135135135,
+  0.5,
+  0.3052770448548813,
+  0.3913793103448276,
+  0.4722222222222222,
+  0.4602040816326531,
+  0.4540540540540541,
+  0.5,
+  0.46063829787234045,
+  0.3611111111111111,
+  0.7115384615384615,
+  0.5,
+  0.5406542056074767,
+  0.5,
+  0.7340659340659341,
+  0.5,
+  0.4197674418604651,
+  0.5833333333333334,
+  0.5,
+  0.5,
+  0.6260000000000001
+ ],
+ "oof": {
+  "ens_0.5_min_one": {
+   "sample_mean_f1": 0.926198695818949,
+   "macro_f1": 0.8748929015109813,
+   "micro_f1": 0.9181193872160591,
+   "subset_accuracy": 0.8866513233601842
+  },
+  "note": "OOF numbers are for model selection only; report the held-out numbers"
+ },
+ "submission": {
+  "path": "results_s2a/submission.csv",
+  "mean_labels": 1.0794078061911172,
+  "check": {
+   "rows": 743,
+   "mean_labels_per_image": 1.0794078061911172,
+   "frac_single_label": 0.9205921938088829
+  }
+ }
+}

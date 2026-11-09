@@ -1,0 +1,11 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}\usepackage[T1]{fontenc}\usepackage[margin=2.2cm]{geometry}\usepackage{booktabs,graphicx,xcolor,hyperref,caption,needspace}
+\renewcommand{\thetable}{S\arabic{table}}
+\title{Supplementary material: Leakage-controlled benchmarking of radiograph body-part classification}
+\author{Sheikh Noor Abdullah, A.B.M. Kabir Hossain}\date{}
+\begin{document}\maketitle
+\input{tables/t02_runs}\input{tables/t05_decoding}\input{tables/t06_gate}\input{tables/t08_covid}\input{tables/t10_explain}\input{tables/t12_confusions}\input{tables/t13_per_class}\input{tables/t14_label_audit}\input{tables/t15_dataset}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\begin{figure}[htbp]\centering\includegraphics[width=0.85\textwidth]{figures/fig3_per_class_recall.png}\caption{Held-out recall for each class, with patient-bootstrap intervals. The weakest classes are also the rarest.}\label{fig:s1}\end{figure}
+\begin{figure}[htbp]\centering\includegraphics[width=0.85\textwidth]{figures/c4_kaggle_stage2.png}\caption{(Top) Private leaderboard scores; our two entries are late submissions and are not ranked. (Bottom) Stage 2 out-of-fold sample-F1 with 95 \% patient-bootstrap intervals for the plain, the pseudo-labelled and the combined ensembles.}\label{fig:s2}\end{figure}
+\end{document}

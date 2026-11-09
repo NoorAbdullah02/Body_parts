@@ -1,0 +1,16 @@
+\setcounter{table}{1}
+\begin{table}[!ht]\centering\small
+\caption{Decoding ablation and evaluation leakage}\label{tab:decoding}
+\resizebox{\ifdim\width>\textwidth\textwidth\else\width\fi}{!}{\begin{tabular}{p{0.64\textwidth}cc}
+\toprule
+\textbf{decoding} & \textbf{held-out sample-F1 [95\% CI]} & \textbf{macro-F1} \\
+\midrule
+0.5, empty allowed & 0.9058 [0.8544, 0.9480] & 0.8361 \\
+0.5 + min-one & 0.9089 [0.8576, 0.9509] & 0.837 \\
+global threshold 0.50 (tuned on OOF) + min-one & 0.9089 [0.8576, 0.9509] & 0.837 \\
+per-class thresholds tuned on OOF (honest) + min-one & 0.9099 [0.8599, 0.9523] & 0.8413 \\
+per-class thresholds tuned on HELD-OUT (leaky) + min-one & 0.9182 [0.8668, 0.9592] & 0.8565 \\
+\bottomrule
+\end{tabular}}
+\par\smallskip{\footnotesize Leak gap (thresholds tuned on the held-out set minus thresholds tuned on OOF) = +0.0083.}
+\end{table}

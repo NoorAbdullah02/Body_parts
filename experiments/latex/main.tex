@@ -1,0 +1,42 @@
+% Elsevier (elsarticle) version for Computerized Medical Imaging and Graphics. Compile on Overleaf (elsarticle is preinstalled there).
+% Upload the whole folder; refs.bib, sections/, tables/, figures/ must sit next to this file. Supplementary tables are in supplementary.tex.
+\documentclass[preprint,12pt,authoryear]{elsarticle}
+\usepackage[utf8]{inputenc}\usepackage[T1]{fontenc}
+\usepackage{graphicx,booktabs,xcolor,amsmath,float,caption,needspace,array}
+\usepackage[hyphens]{xurl}
+\usepackage[breaklinks=true]{hyperref}
+\emergencystretch=3em\tolerance=1500\hbadness=5000
+\graphicspath{{figures/}}
+\renewcommand{\topfraction}{0.92}\renewcommand{\bottomfraction}{0.92}\renewcommand{\textfraction}{0.08}\renewcommand{\floatpagefraction}{0.75}
+\setlength{\textfloatsep}{10pt plus 2pt minus 2pt}\setlength{\intextsep}{10pt plus 2pt minus 2pt}\setlength{\floatsep}{8pt plus 2pt minus 2pt}\setlength{\parskip}{2pt plus 1.5pt}\flushbottom
+\journal{Computerized Medical Imaging and Graphics}
+\makeatletter\@ifundefined{theaffn}{}{\renewcommand{\theaffn}{\arabic{affn}}}\makeatother
+\makeatletter\Urlmuskip=0mu plus 0mu\def\UrlBreaks{\do\/\do\-\do\_\do\=\do\?}\def\UrlBigBreaks{\do\/}\def\UrlNoBreaks{\do\(\do\)\do\:\do\.}\makeatother
+\begin{document}
+\setcounter{totalnumber}{1}\setcounter{topnumber}{1}\setcounter{bottomnumber}{0}
+\begin{frontmatter}
+\title{Leakage-controlled benchmarking of radiograph body-part classification: reliability, label audit, explainability and cross-dataset transfer on public data}
+\author[1]{Sheikh Noor Abdullah\corref{cor1}}
+\ead{sheikhnoorabdullah02@gmail.com}
+\author[1]{A.B.M. Kabir Hossain}
+\cortext[cor1]{Corresponding author. ORCID: 0009-0002-7193-4284}
+\affiliation[1]{organization={Department of Information and Communication Engineering, Bangladesh Army University of Engineering \& Technology (BAUET)},addressline={Qadirabad Cantonment},city={Natore},country={Bangladesh}}
+\begin{abstract}
+\input{sections/abstract}
+\end{abstract}
+\begin{keyword}
+body-part classification \sep radiograph \sep data leakage \sep reproducibility \sep calibration \sep label noise
+\end{keyword}
+\end{frontmatter}
+\input{sections/introduction}
+\input{sections/related_work}
+\input{sections/data}
+\input{sections/methods}
+\input{sections/results}
+\input{sections/discussion}
+\input{sections/limitations}
+\input{sections/conclusion}
+\input{sections/declarations}
+\input{sections/declaration_of_generativ}
+\input{references}
+\end{document}

@@ -1,0 +1,13 @@
+# versions to be pinned from the Kaggle run logs before public release (only PyTorch is confirmed from the logs: 2.11.0+cu130)
+torch==2.11.0
+timm
+albumentations
+pydicom
+numpy
+pandas
+scikit-learn
+iterative-stratification
+scipy
+matplotlib
+python-docx
+open_clip_torch   # optional, only for the BiomedCLIP probe (could not be downloaded in our run)

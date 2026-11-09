@@ -1,0 +1,63 @@
+{
+ "source": "printed output of Kaggle notebook mabsurahahadroja/mura-generalization, Version 1 (4h54m08s); copied verbatim (arrays not downloaded)",
+ "chosen_variant": {
+  "mura_swin_tiny_s224": "blend_tta",
+  "mura_densenet121_s224": "blend_tta"
+ },
+ "weights": {
+  "mura_swin_tiny_s224": 0.2682926829268293,
+  "mura_densenet121_s224": 0.7317073170731707
+ },
+ "holdout": {
+  "n_images": 3197,
+  "n_patients": 783,
+  "ens_0.5": {
+   "sample_mean_f1": 0.9737253675320613,
+   "macro_f1": 0.9694194346568362,
+   "micro_f1": 0.9734540911930044,
+   "subset_accuracy": 0.9712230215827338
+  },
+  "ens_0.5_min_one": {
+   "sample_mean_f1": 0.9743509540193932,
+   "macro_f1": 0.9698210459483123,
+   "micro_f1": 0.9736226002809427,
+   "subset_accuracy": 0.9718486080700657
+  },
+  "ens_tuned_min_one": {
+   "sample_mean_f1": 0.974246689604838,
+   "macro_f1": 0.969286173529297,
+   "micro_f1": 0.9731752963194011,
+   "subset_accuracy": 0.9709102283390679
+  },
+  "ci_sample_mean_f1_tuned": {
+   "estimate": 0.974246689604838,
+   "ci_low": 0.966224464315723,
+   "ci_high": 0.9815765274373355,
+   "boot_std": 0.003733151858880205,
+   "n_patients": 783,
+   "n_boot": 2000
+  },
+  "ci_macro_f1_tuned": {
+   "estimate": 0.969286173529297,
+   "ci_low": 0.9601653715543468,
+   "ci_high": 0.9773926569861937,
+   "boot_std": 0.004324133771165857,
+   "n_patients": 783,
+   "n_boot": 2000
+  },
+  "best_single_by_oof": "mura_densenet121_s224",
+  "best_single_metrics": {
+   "sample_mean_f1": 0.9737253675320613,
+   "macro_f1": 0.968499803355747,
+   "micro_f1": 0.9727116794012163,
+   "subset_accuracy": 0.9699718486080701
+  },
+  "paired_ens_vs_single_sample_f1": {
+   "diff": 0.0005213220727766643,
+   "ci_low": -0.0002088817762289419,
+   "ci_high": 0.001298756532169981,
+   "p_value": 0.206,
+   "n_boot": 2000
+  }
+ }
+}

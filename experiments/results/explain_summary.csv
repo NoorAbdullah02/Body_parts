@@ -1,0 +1,4 @@
+model,target_layer,holdout_sample_F1(blend),pairs,deletion_CAM,deletion_random_grid,gain [95% CI],rho trained-vs-random,frac |rho|<0.3
+convnext_tiny_s256,body.norm_pre,0.9085,150,0.455,0.739,"0.284 [0.252, 0.316]",0.11,0.56
+resnet50_s256_heavy,body.layer4,0.8972,150,0.426,0.63,"0.204 [0.177, 0.231]",-0.314,0.38
+swin_tiny_s224,body.norm,0.9028,150,0.755,0.92,"0.164 [0.133, 0.197]",0.02,0.67

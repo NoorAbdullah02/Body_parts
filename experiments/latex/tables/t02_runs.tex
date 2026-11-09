@@ -1,0 +1,17 @@
+\setcounter{table}{0}
+\begin{table}[!ht]\centering\small
+\caption{Single runs (head/TTA variant chosen on OOF)}\label{tab:runs}
+\resizebox{\ifdim\width>\textwidth\textwidth\else\width\fi}{!}{\begin{tabular}{p{0.51\textwidth}ccc}
+\toprule
+\textbf{run} & \textbf{chosen variant} & \textbf{oof chosen variant} & \textbf{holdout sample mean f1 0.5 min one} \\
+\midrule
+swin\_tiny\_s224 & blend & 0.9147 & 0.9133 \\
+densenet121\_s256 & blend & 0.918 & 0.9221 \\
+efficientnetv2\_s\_s256 & blend\_tta & 0.9186 & 0.9173 \\
+convnext\_tiny\_s256 & blend\_tta & 0.9234 & 0.9123 \\
+resnet50\_s256\_heavy & blend & 0.9064 & 0.9104 \\
+efficientnet\_b3\_s256\_hv & blend\_tta & 0.9133 & 0.9172 \\
+\bottomrule
+\end{tabular}}
+\par\smallskip{\footnotesize OOF = pooled out-of-fold sample-mean F1 of the chosen variant is in the full CSV.}
+\end{table}

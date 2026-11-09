@@ -1,0 +1,90 @@
+{
+ "n_train": 1738,
+ "n_test": 743,
+ "n_train_patients": 768,
+ "n_test_patients": 330,
+ "patient_overlap_train_test": 0,
+ "train_patients_with_gt1_image": 483,
+ "max_images_per_patient": 13,
+ "labels_per_image": {
+  "1": 1606,
+  "2": 122,
+  "3": 10
+ },
+ "single_label_fraction": 0.9240506329113924,
+ "image_size_counts": {
+  "256x256": 2481
+ },
+ "photometric_counts": {
+  "MONOCHROME1": 2367,
+  "MONOCHROME2": 114
+ },
+ "bits_stored_counts": {
+  "15": 2367,
+  "8": 69,
+  "10": 43,
+  "12": 2
+ },
+ "modality_counts": {
+  "CR": 2481
+ },
+ "body_part_examined_nonempty": 0,
+ "body_part_examined_values": {
+  "": 2481
+ },
+ "view_position_values": {
+  "": 2481
+ },
+ "study_description_nonempty": 2481,
+ "top_cooccurring_pairs": [
+  {
+   "pair": "Lumbar Spine + Thoracic Spine",
+   "images": 48
+  },
+  {
+   "pair": "Hand + Wrist",
+   "images": 42
+  },
+  {
+   "pair": "Abdomen + Chest",
+   "images": 11
+  },
+  {
+   "pair": "Ankle + Feet",
+   "images": 7
+  },
+  {
+   "pair": "Knee + Lower Leg",
+   "images": 6
+  },
+  {
+   "pair": "Hip + Thigh",
+   "images": 6
+  },
+  {
+   "pair": "Ankle + Lower Leg",
+   "images": 6
+  },
+  {
+   "pair": "Ankle + Knee",
+   "images": 5
+  }
+ ],
+ "imbalance_ratio_max_over_min": 82.0,
+ "holdout": {
+  "images": 323,
+  "patients": 156
+ },
+ "cv_pool": {
+  "images": 1415,
+  "patients": 612,
+  "images_per_fold": {
+   "0": 274,
+   "1": 287,
+   "2": 307,
+   "3": 269,
+   "4": 278
+  }
+ },
+ "holdout_pool_patient_overlap": 0
+}

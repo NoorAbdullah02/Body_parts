@@ -1,0 +1,118 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Kaggle: Your Home for Data Science</title>
+  <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+  <meta name="description" content="Discover what actually works in AI. Join millions of builders, researchers, and labs evaluating agents, models, and frontier technology through crowdsourced benchmarks, competitions, and hackathons." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="theme-color" content="#008ABC" />
+  <script nonce="EkVmae4FusHzc4d7z4Vmdw==" type="text/javascript">
+    window["pageRequestStartTime"] = 1793981092456;
+    window["pageRequestEndTime"] = 1793981092463;
+    window["initialPageLoadStartTime"] = new Date().getTime();
+  </script>
+  <script nonce="EkVmae4FusHzc4d7z4Vmdw==" id="gsi-client" src="https://accounts.google.com/gsi/client" async defer></script>
+  <script nonce="EkVmae4FusHzc4d7z4Vmdw==">window.KAGGLE_JUPYTERLAB_PATH = "/static/assets/jupyterlab-v4/jupyterlab-index-ea946820eec5f321.html";</script>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous" /><link rel="preconnect" href="https://stats.g.doubleclick.net" /><link rel="preconnect" href="https://storage.googleapis.com" /><link rel="preconnect" href="https://apis.google.com" />
+  <link href="/static/images/favicon-new.ico" rel="shortcut icon" type="image/x-icon" id="dynamic-favicon" />
+  <link rel="manifest" href="/static/json/manifest.json" crossorigin="use-credentials">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Symbols:FILL,wght@0..1,200..700&display=block"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap"
+    rel="stylesheet" media="print" id="async-google-font-1" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Symbols:FILL,wght@0..1,200..700&display=block"
+    rel="stylesheet" media="print" id="async-google-font-2" />
+  <script nonce="EkVmae4FusHzc4d7z4Vmdw==" type="text/javascript">
+    const styleSheetIds = ["async-google-font-1", "async-google-font-2"];
+    styleSheetIds.forEach(function (id) {
+      document.getElementById(id).addEventListener("load", function() {
+        this.media = "all";
+      });
+    });
+  </script>
+
+    <script nonce="EkVmae4FusHzc4d7z4Vmdw==" id="site-wide-recaptcha"
+      src="https://www.google.com/recaptcha/enterprise.js?render=6LcVUOAUAAAAAP8nMSGuW46uJC5Zf6-PCYKN5xxv" async defer></script>
+    <style>.grecaptcha-badge { visibility: hidden; }</style>
+
+    <link rel="stylesheet" type="text/css" href="/static/assets/app.css?v=eaaf56410ec43b3e" />
+
+  
+    
+ 
+      <script nonce="EkVmae4FusHzc4d7z4Vmdw==">
+        try{(function(a,s,y,n,c,h,i,d,e){d=s.createElement("style");
+        d.appendChild(s.createTextNode(""));s.head.appendChild(d);d=d.sheet;
+        y=y.map(x => d.insertRule(x + "{ opacity: 0 !important }"));
+        h.start=1*new Date;h.end=i=function(){y.forEach(x => x<d.cssRules.length ? d.deleteRule(x) : {})};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document,['.site-header-react__nav'],'dataLayer',2000,{'GTM-52LNT9S':true});}catch(ex){}
+    </script>
+    <script nonce="EkVmae4FusHzc4d7z4Vmdw==">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-T7QHS60L4Q', {
+            'optimize_id': 'GTM-52LNT9S',
+            'displayFeaturesTask': null,
+            'send_page_view': false,
+            'content_group1': 'Kernels',
+            'user_properties': {
+                'logged_in': false,
+            }
+        });
+    </script>
+    <script nonce="EkVmae4FusHzc4d7z4Vmdw==" async src="https://www.googletagmanager.com/gtag/js?id=G-T7QHS60L4Q"></script>
+
+
+  
+    
+
+
+    <meta property="og:image" content="https://www.kaggle.com/static/images/kaggle-wordmark-gradient.png" />
+    <meta property="twitter:image" content="https://www.kaggle.com/static/images/kaggle-wordmark-gradient-square.png" />
+
+  <meta name="twitter:site" content="@Kaggle" /> 
+  
+    
+
+  
+    
+
+  
+    
+
+
+
+    <script nonce="EkVmae4FusHzc4d7z4Vmdw==">window['useKaggleAnalytics'] = true;</script>
+
+  <script id="gapi-target" nonce="EkVmae4FusHzc4d7z4Vmdw==" src="https://apis.google.com/js/api.js" defer
+    async></script>
+  <script nonce="EkVmae4FusHzc4d7z4Vmdw==" src="/static/assets/runtime.js?v=b8ec1ce32266dcde"></script>
+  <script nonce="EkVmae4FusHzc4d7z4Vmdw==" src="/static/assets/vendor.js?v=d65bb8768740f992"></script>
+  <script nonce="EkVmae4FusHzc4d7z4Vmdw==" src="/static/assets/app.js?v=5747944b4d70e88e"></script>
+</head>
+<body>
+  <div id="root">
+    
+
+
+
+
+
+
+
+
+  </div>
+</body>
+</html>

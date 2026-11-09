@@ -1,0 +1,33 @@
+\setcounter{table}{6}
+\begin{table}[!ht]\centering\small
+\caption{Per-class held-out performance of the five-model ensemble (threshold 0.5, min-one rule)}\label{tab:perclass}
+\resizebox{\ifdim\width>\textwidth\textwidth\else\width\fi}{!}{\begin{tabular}{p{0.38\textwidth}cccc}
+\toprule
+\textbf{class} & \textbf{n positives} & \textbf{precision} & \textbf{recall [95\% CI]} & \textbf{F1 [95\% CI]} \\
+\midrule
+Hip & 6 & 1.000 & 0.333 [0.000, 1.000] & 0.500 [0.000, 1.000] \\
+Forearm & 3 & 1.000 & 0.333 [0.000, 1.000] & 0.500 [0.000, 1.000] \\
+Others & 22 & 1.000 & 0.409 [0.133, 0.909] & 0.581 [0.235, 0.953] \\
+Shoulder & 5 & 1.000 & 0.600 [0.000, 1.000] & 0.750 [0.000, 1.000] \\
+Elbow & 3 & 1.000 & 0.667 [0.500, 1.000] & 0.800 [0.667, 1.000] \\
+Ankle & 12 & 0.750 & 0.750 [0.286, 1.000] & 0.750 [0.182, 0.929] \\
+Wrist & 26 & 0.913 & 0.808 [0.609, 1.000] & 0.857 [0.690, 0.978] \\
+Knee & 22 & 1.000 & 0.909 [0.667, 1.000] & 0.952 [0.800, 1.000] \\
+Abdomen & 15 & 0.636 & 0.933 [0.800, 1.000] & 0.757 [0.533, 0.970] \\
+Chest & 138 & 0.993 & 0.993 [0.976, 1.000] & 0.993 [0.981, 1.000] \\
+Finger & 4 & 0.800 & 1.000 [1.000, 1.000] & 0.889 [0.500, 1.000] \\
+Feet & 14 & 1.000 & 1.000 [1.000, 1.000] & 1.000 [1.000, 1.000] \\
+Hand & 16 & 1.000 & 1.000 [1.000, 1.000] & 1.000 [1.000, 1.000] \\
+Lower Leg & 4 & 0.571 & 1.000 [1.000, 1.000] & 0.727 [0.000, 1.000] \\
+Clavicles & 1 & 1.000 & 1.000 [1.000, 1.000] & 1.000 [1.000, 1.000] \\
+Cervical Spine & 15 & 1.000 & 1.000 [1.000, 1.000] & 1.000 [1.000, 1.000] \\
+Pelvis & 13 & 0.650 & 1.000 [1.000, 1.000] & 0.788 [0.571, 1.000] \\
+Lumbar Spine & 14 & 0.778 & 1.000 [1.000, 1.000] & 0.875 [0.685, 1.000] \\
+Skull & 2 & 1.000 & 1.000 [1.000, 1.000] & 1.000 [1.000, 1.000] \\
+Sinus & 5 & 1.000 & 1.000 [1.000, 1.000] & 1.000 [1.000, 1.000] \\
+Thigh & 3 & 1.000 & 1.000 [1.000, 1.000] & 1.000 [1.000, 1.000] \\
+Thoracic Spine & 11 & 0.846 & 1.000 [1.000, 1.000] & 0.917 [0.737, 1.000] \\
+\bottomrule
+\end{tabular}}
+\par\smallskip{\footnotesize Patient-level bootstrap CIs (1,000 resamples); classes with 1-6 positives have uninformative intervals.}
+\end{table}

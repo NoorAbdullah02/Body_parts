@@ -1,0 +1,25 @@
+Figure 1. One example radiograph per class from the UNIFESP dataset (CC BY-NC-SA 4.0), with the number of training images in each class. Several images show more than one view side by side.
+
+Figure 2. Evaluation protocol. Images are split by patient into a cross-validation pool and a held-out set. Every choice is made on out-of-fold predictions, and the held-out set is scored once, with patient-bootstrap confidence intervals.
+
+Figure 3. (A) Training images per class, on a log scale. (B) Number of labels per image.
+
+Figure 4. (A) The ten most frequent label pairs; two pairs, Lumbar with Thoracic Spine and Hand with Wrist, account for most multilabel images. (B) Images per class in the cross-validation pool and in the held-out set, on a log scale.
+
+Figure 5. The models and the decision pipeline. Six pretrained backbones, each with a sigmoid and a softmax head, are trained on five patient-level folds. Head blending, ensemble weights, thresholds and the minimum-one-label rule are all chosen on out-of-fold predictions.
+
+Figure 6. Held-out sample-F1 for a frozen DINOv2-S probe, the fine-tuned Swin-T, the best single model and the ensemble. All 95 % confidence intervals overlap.
+
+Figure 7. (A) How much a random image-level split and tuning thresholds on the held-out set overstate the score. (B) Mean weight the learned fusion gates give the CNN branch, compared with a fixed average.
+
+Figure 8. Change in held-out sample-F1 against the reference Swin-T for each ablation (95 % paired patient-bootstrap interval; p-values on the right). None of the intervals excludes zero.
+
+Figure 9. (A) Label efficiency of frozen encoders. (B) Held-out F1 of the frozen probes next to the fine-tuned models.
+
+Figure 10. (A) Accuracy on the images the model answers, as a function of coverage. (B) Accuracy targets chosen on out-of-fold predictions, and the accuracy reached on the held-out set.
+
+Figure 11. (A) The pairs of given and suggested labels among the 39 suspected label errors. (B) The most frequent misclassifications of the three explained models on the held-out set.
+
+Figure 12. (A) Body-part accuracy on MURA (seven classes), compared with the models reported by Shah et al. (2026). (B) Zero-shot accuracy through the class map, for the softmax and sigmoid heads; intervals come from an image-level bootstrap and are optimistic.
+
+Figure 13. Grad-CAM galleries for ConvNeXt-T (left), ResNet50 (middle) and Swin-T (right). For each class there is one correct and one missed held-out image, with the map for the true class and for the predicted class.

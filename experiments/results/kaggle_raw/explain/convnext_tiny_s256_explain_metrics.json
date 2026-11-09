@@ -1,0 +1,41 @@
+{
+ "title": "convnext_tiny_s256",
+ "weights": "runs/convnext_tiny_s256_f0/final_ema.pt",
+ "n_images": 323,
+ "holdout_sample_f1_blend": 0.9084623323013414,
+ "target_layer": "body.norm_pre",
+ "channels_last": false,
+ "gallery_rows": 33,
+ "faithfulness_deletion": {
+  "pairs": 150,
+  "score_cam": {
+   "mean": 0.455379023894544,
+   "ci_low": 0.4127816695942778,
+   "ci_high": 0.4974881920865941,
+   "n": 150
+  },
+  "score_random_order": {
+   "mean": 0.7391072583145477,
+   "ci_low": 0.7031213045011132,
+   "ci_high": 0.7722478712627443,
+   "n": 150
+  },
+  "deletion_gain_random_minus_cam": {
+   "mean": 0.2837282344200038,
+   "ci_low": 0.2516510695476525,
+   "ci_high": 0.31582812059453746,
+   "n": 150
+  },
+  "note": "mean P(class) over deleting 0-50 % of pixels; lower = more faithful; gain > 0 means CAM beats a random map of the same grid granularity"
+ },
+ "randomization_sanity": {
+  "spearman_trained_vs_random_weights": {
+   "mean": 0.11028382520668359,
+   "ci_low": 0.059620976378029426,
+   "ci_high": 0.1621505493397043,
+   "n": 150
+  },
+  "fraction_abs_rho_below_0.3": 0.56,
+  "note": "low correlation = the map depends on the learned weights (passes the check)"
+ }
+}

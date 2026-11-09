@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+title: "Body_parts: Leakage-controlled benchmark for radiograph body-part classification"
+message: "If you use this code, please cite the software release (and the paper once it is published)."
+authors:
+  - family-names: "Abdullah"
+    given-names: "Sheikh Noor"
+    orcid: "https://orcid.org/0009-0002-7193-4284"
+    affiliation: "Department of Information and Communication Engineering, Bangladesh Army University of Engineering & Technology (BAUET), Natore, Bangladesh"
+  - family-names: "Hossain"
+    given-names: "A.B.M. Kabir"
+    affiliation: "Department of Information and Communication Engineering, Bangladesh Army University of Engineering & Technology (BAUET), Natore, Bangladesh"
+license: MIT
+repository-code: "https://github.com/NoorAbdullah02/Body_parts"
+doi: 10.5281/zenodo.24027438

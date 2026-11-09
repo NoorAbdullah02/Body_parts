@@ -1,0 +1,14 @@
+"""Comparison table for the Related work section (used by make_latex.py and build_docx.py). '-' = not reported in the abstract or the parts of the paper we read."""
+LIT_TITLE = "Table 16. Studies of body-part or anatomy classification, and what each reports"
+LIT_HEAD = ["study", "images and classes", "data", "split unit", "label review", "external data", "calib."]
+LIT_ROWS = [
+ ["Pham et al. (2021)", "16,093 radiographs, 5 coarse groups", "public", "stratified random; patient not mentioned", "two readers, two rounds", "1,000 images", "-"],
+ ["Langer et al. (2024, preprint)", "48,434 radiographs, 14 regions", "hospital", "64/16/20; patient not mentioned", "expert reviewed test errors", "-", "-"],
+ ["Mitsuyama et al. (2026)", "429,341 radiographs, 7 categories", "2 sites + MURA", "patient (8:1:1)", "radiologists corrected tags", "site B, MURA", "-"],
+ ["Krishnan and Padmavathi (2025)", "UNIFESP, 22 classes", "public", "- (not in abstract)", "-", "-", "-"],
+ ["Shah et al. (2026)", "MURA, 7 study types", "public", "patient-wise", "-", "-", "-"],
+ ["Fink et al. (2024)", "23,663 musculoskeletal radiographs, projection and side", "one centre", "patient", "uncertain cases by consensus", "none", "-"],
+ ["Raffy et al. (2023)", "CT and MRI, 17 and 18 regions", "one health system", "patient", "one annotator, 2.5 % reviewed", "27 institutions", "-"],
+ ["This work", "UNIFESP 22 classes (multilabel), MURA 7 classes, FracAtlas, COVID-19", "public only", "patient, nested", "audit of 39 suspects (no clinician)", "MURA, FracAtlas, UNIFESP", "ECE, risk-coverage"],
+]
+LIT_NOTE = "calib. = calibration or selective prediction. A dash means the item was not reported (full texts read for all rows except Krishnan and Padmavathi, where only the abstract was available)."

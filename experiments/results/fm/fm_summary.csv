@@ -1,0 +1,7 @@
+model,dim,chosen_wd,oof_sample_f1,hold_sample_f1,hold_ci_low,hold_ci_high,hold_macro_f1,error
+dinov2_s,384,0.001,0.8699,0.8859,0.8327,0.9318,0.7656,
+dinov2_b,768,0.001,0.8676,0.8839,0.8300,0.9276,0.7536,
+swin_in1k,768,0.001,0.8555,0.8762,0.8248,0.9204,0.7327,
+resnet18_random,512,0.0001,0.5629,0.0946,0.0905,0.0992,0.0853,
+biomedclip,,,,,,,,"RuntimeError: HF Hub 401 / repo not found (open_clip_config.json) - could not download"
+convnext_in1k,,,,,,,,"RuntimeError: Invalid pretrained tag (in1k) for convnext_tiny"

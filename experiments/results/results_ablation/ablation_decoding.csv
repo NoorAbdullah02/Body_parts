@@ -1,0 +1,6 @@
+decoding,hold_sample_f1,ci_low,ci_high,macro_f1
+"0.5, empty allowed",0.9058,0.8544,0.948,0.8361
+0.5 + min-one,0.9089,0.8576,0.9509,0.837
+global threshold 0.50 (tuned on OOF) + min-one,0.9089,0.8576,0.9509,0.837
+per-class thresholds tuned on OOF (honest) + min-one,0.9099,0.8599,0.9523,0.8413
+per-class thresholds tuned on HELD-OUT (leaky) + min-one,0.9182,0.8668,0.9592,0.8565

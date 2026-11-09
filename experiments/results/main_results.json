@@ -1,0 +1,71 @@
+{
+ "chosen_variant": {
+  "swin_tiny_s224": "blend",
+  "densenet121_s256": "blend",
+  "efficientnetv2_s_s256": "blend_tta",
+  "convnext_tiny_s256": "blend_tta",
+  "resnet50_s256_heavy": "blend",
+  "efficientnet_b3_s256_hv": "blend_tta"
+ },
+ "weights": {
+  "swin_tiny_s224": 0.0,
+  "densenet121_s256": 0.0,
+  "efficientnetv2_s_s256": 0.0975609756097561,
+  "convnext_tiny_s256": 0.2682926829268293,
+  "resnet50_s256_heavy": 0.2926829268292683,
+  "efficientnet_b3_s256_hv": 0.34146341463414637
+ },
+ "holdout": {
+  "n_images": 323,
+  "n_patients": 156,
+  "ens_0.5": {
+   "sample_mean_f1": 0.9164086687306502,
+   "macro_f1": 0.8536512201107516,
+   "micro_f1": 0.912981455064194,
+   "subset_accuracy": 0.8885448916408669
+  },
+  "ens_0.5_min_one": {
+   "sample_mean_f1": 0.9164086687306502,
+   "macro_f1": 0.8536512201107516,
+   "micro_f1": 0.912981455064194,
+   "subset_accuracy": 0.8885448916408669
+  },
+  "ens_tuned_min_one": {
+   "sample_mean_f1": 0.9188854489164086,
+   "macro_f1": 0.8630176112953246,
+   "micro_f1": 0.9147727272727273,
+   "subset_accuracy": 0.8885448916408669
+  },
+  "ci_sample_mean_f1_tuned": {
+   "estimate": 0.9188854489164086,
+   "ci_low": 0.8668818984547462,
+   "ci_high": 0.960221064582916,
+   "boot_std": 0.02421227138451958,
+   "n_patients": 156,
+   "n_boot": 2000
+  },
+  "ci_macro_f1_tuned": {
+   "estimate": 0.8630176112953246,
+   "ci_low": 0.6891493641185686,
+   "ci_high": 0.8916026141512692,
+   "boot_std": 0.052013992497719694,
+   "n_patients": 156,
+   "n_boot": 2000
+  },
+  "best_single_by_oof": "convnext_tiny_s256",
+  "best_single_metrics": {
+   "sample_mean_f1": 0.912280701754386,
+   "macro_f1": 0.8481730068487877,
+   "micro_f1": 0.9070100143061517,
+   "subset_accuracy": 0.8761609907120743
+  },
+  "paired_ens_vs_single_sample_f1": {
+   "diff": 0.006604747162022528,
+   "ci_low": -0.00021648558413265017,
+   "ci_high": 0.014207886489976288,
+   "p_value": 0.063,
+   "n_boot": 2000
+  }
+ },
+ "source": "parsed from the printed output of unifesp-v2-pipeline.ipynb (stage 1, Kaggle run 1h35m, 30/30 jobs ok)"
+}

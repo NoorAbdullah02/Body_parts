@@ -1,0 +1,40 @@
+code,given_label,my_verdict,my_guess_if_wrong,model_says,why
+R01,Elbow,unsure,,Lower Leg,forearm with elbow at one end and wrist at the other
+R02,Pelvis,wrong,Hip,Others,close view of hip joint and upper femur
+R03,Others,wrong,Skull,Sinus,front view of the skull and face
+R04,Lumbar Spine+Thoracic Spine,wrong,Chest,Chest,clearly a chest radiograph
+R05,Abdomen,fine,,Chest,"chest-abdomen view of a child, abdomen plausible"
+R06,Hip,unsure,Pelvis,Pelvis,child pelvis with both hips; Hip or Pelvis
+R07,Abdomen,unsure,Pelvis,Pelvis,lower abdomen and pelvis
+R08,Others,wrong,Pelvis,Pelvis,small field on the pelvis and groin
+R09,Others,wrong,Chest,Chest,child chest in a round mask
+R10,Wrist,wrong,Ankle,Ankle,"tibia, fibula and talus: an ankle"
+R11,Others,wrong,Thoracic Spine,Thoracic Spine,scoliotic spine and chest
+R12,Ankle,fine,,Wrist,ankle
+R13,Wrist,wrong,Ankle,Ankle,side view of ankle and foot
+R14,Cervical Spine,wrong,Thoracic Spine,Thoracic Spine,"thoracic spine with ribs, front and side"
+R15,Hip,fine,,Pelvis,two views of the hip
+R16,Hand,fine,,Feet,side view of the hand
+R17,Chest,unsure,,Abdomen,infant chest and abdomen together
+R18,Wrist,wrong,Ankle,Ankle,ankle and hindfoot
+R19,Lumbar Spine,fine,,Others,lumbar spine
+R20,Elbow,unsure,Forearm,Forearm,forearm with elbow at one end
+R21,Wrist,wrong,Ankle,Ankle,side view of ankle
+R22,Others,wrong,Skull,Cervical Spine,side view of skull and cervical spine
+R23,Hip,unsure,Pelvis,Pelvis,hip and pelvis
+R24,Others,wrong,Chest,Chest,part of a chest radiograph
+R25,Others,wrong,Skull,Sinus,front view of the skull
+R26,Others,wrong,Feet,Feet,side view of the foot
+R27,Thoracic Spine,fine,,Chest,side view of the thoracolumbar spine
+R28,Forearm,fine,,Elbow,forearm in two views
+R29,Lumbar Spine+Thoracic Spine,fine,,Abdomen,scoliotic lumbar and thoracic spine
+R30,Forearm,fine,,Elbow,"forearm bones, fracture visible"
+R31,Others,wrong,Thoracic Spine,Chest,scoliotic thoracic spine and chest
+R32,Lumbar Spine,unsure,,Abdomen,"whole spine with scoliosis, thoracic and lumbar"
+R33,Pelvis,fine,,Hip,"pelvis, hip prosthesis"
+R34,Finger,unsure,Hand,Hand,hand with fingers; Finger or Hand
+R35,Others,wrong,Feet,Feet,foot
+R36,Hip,fine,,Pelvis,"pelvis and hips, hip prosthesis"
+R37,Knee,wrong,Feet,Feet,"foot and ankle, no knee"
+R38,Hip,unsure,,Pelvis,pelvis and upper thigh
+R39,Chest,wrong,Cervical Spine,Cervical Spine,neck: cervical spine

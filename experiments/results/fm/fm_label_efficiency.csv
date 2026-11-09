@@ -1,0 +1,17 @@
+model,train_patient_fraction,oof_sample_f1
+dinov2_s,0.10,0.6435
+dinov2_s,0.25,0.7457
+dinov2_s,0.50,0.8235
+dinov2_s,1.00,0.8699
+dinov2_b,0.10,0.6346
+dinov2_b,0.25,0.7258
+dinov2_b,0.50,0.8133
+dinov2_b,1.00,0.8676
+swin_in1k,0.10,0.5517
+swin_in1k,0.25,0.6790
+swin_in1k,0.50,0.7777
+swin_in1k,1.00,0.8555
+resnet18_random,0.10,0.3112
+resnet18_random,0.25,0.3832
+resnet18_random,0.50,0.4791
+resnet18_random,1.00,0.5629

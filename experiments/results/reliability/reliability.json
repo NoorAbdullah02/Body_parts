@@ -1,0 +1,185 @@
+{
+ "runs": [
+  "swin_tiny_s224",
+  "swin_tiny_s224_seed1",
+  "swin_tiny_s224_seed2",
+  "densenet121_s256",
+  "convnext_tiny_s256"
+ ],
+ "variants": {
+  "swin_tiny_s224": "sig",
+  "swin_tiny_s224_seed1": "blend_tta",
+  "swin_tiny_s224_seed2": "blend",
+  "densenet121_s256": "blend",
+  "convnext_tiny_s256": "sig"
+ },
+ "weights": {
+  "swin_tiny_s224": 0.14634146341463414,
+  "swin_tiny_s224_seed1": 0.12195121951219512,
+  "swin_tiny_s224_seed2": 0.2926829268292683,
+  "densenet121_s256": 0.17073170731707318,
+  "convnext_tiny_s256": 0.2682926829268293
+ },
+ "calibration": {
+  "top1_accuracy_holdout": 0.9256965944272446,
+  "ece_holdout_before": 0.054496221126750774,
+  "temperature_fitted_on_oof": 1.15,
+  "ece_holdout_after": 0.05171237906746149,
+  "bins_before": [
+   {
+    "bin": "(0.5,0.6]",
+    "n": 1,
+    "mean_confidence": 0.5671146933625384,
+    "accuracy": 1.0
+   },
+   {
+    "bin": "(0.6,0.7]",
+    "n": 4,
+    "mean_confidence": 0.6630795370878242,
+    "accuracy": 0.0
+   },
+   {
+    "bin": "(0.7,0.8]",
+    "n": 7,
+    "mean_confidence": 0.7459164679258128,
+    "accuracy": 0.8571428571428571
+   },
+   {
+    "bin": "(0.8,0.9]",
+    "n": 24,
+    "mean_confidence": 0.8649749575349374,
+    "accuracy": 0.8333333333333334
+   },
+   {
+    "bin": "(0.9,1.0]",
+    "n": 287,
+    "mean_confidence": 0.9929585096292471,
+    "accuracy": 0.9477351916376306
+   }
+  ],
+  "bins_after": [
+   {
+    "bin": "(0.5,0.6]",
+    "n": 1,
+    "mean_confidence": 0.5584465378200131,
+    "accuracy": 1.0
+   },
+   {
+    "bin": "(0.6,0.7]",
+    "n": 4,
+    "mean_confidence": 0.6431881474210069,
+    "accuracy": 0.0
+   },
+   {
+    "bin": "(0.7,0.8]",
+    "n": 9,
+    "mean_confidence": 0.7352982614732521,
+    "accuracy": 0.8888888888888888
+   },
+   {
+    "bin": "(0.8,0.9]",
+    "n": 28,
+    "mean_confidence": 0.848694397829834,
+    "accuracy": 0.7857142857142857
+   },
+   {
+    "bin": "(0.9,1.0]",
+    "n": 281,
+    "mean_confidence": 0.9912563473343415,
+    "accuracy": 0.9537366548042705
+   }
+  ]
+ },
+ "risk_coverage_holdout": [
+  {
+   "target_coverage": 1.0,
+   "actual_coverage": 1.0,
+   "top1_accuracy_kept": 0.9256965944272446,
+   "acc_ci_low": 0.8717868338557994,
+   "acc_ci_high": 0.9696289232781168
+  },
+  {
+   "target_coverage": 0.99,
+   "actual_coverage": 0.9907120743034056,
+   "top1_accuracy_kept": 0.93125,
+   "acc_ci_low": 0.8787675865800866,
+   "acc_ci_high": 0.9746894964485536
+  },
+  {
+   "target_coverage": 0.95,
+   "actual_coverage": 0.9504643962848297,
+   "top1_accuracy_kept": 0.9413680781758957,
+   "acc_ci_low": 0.8941802815194781,
+   "acc_ci_high": 0.9801421260858347
+  },
+  {
+   "target_coverage": 0.9,
+   "actual_coverage": 0.9009287925696594,
+   "top1_accuracy_kept": 0.9450171821305842,
+   "acc_ci_low": 0.8996700164991751,
+   "acc_ci_high": 0.9849070790183004
+  },
+  {
+   "target_coverage": 0.8,
+   "actual_coverage": 0.8018575851393189,
+   "top1_accuracy_kept": 0.972972972972973,
+   "acc_ci_low": 0.9304994554994556,
+   "acc_ci_high": 1.0
+  },
+  {
+   "target_coverage": 0.7,
+   "actual_coverage": 0.7027863777089783,
+   "top1_accuracy_kept": 0.9823788546255506,
+   "acc_ci_low": 0.9478203911144863,
+   "acc_ci_high": 1.0
+  }
+ ],
+ "selective_threshold_from_oof": [
+  {
+   "target_accuracy_on_oof": 0.95,
+   "threshold": 0.7157934620613005,
+   "holdout_coverage": 0.9845201238390093,
+   "holdout_accuracy_kept": 0.9371069182389937,
+   "holdout_sent_to_human": 0.015479876160990669
+  },
+  {
+   "target_accuracy_on_oof": 0.98,
+   "threshold": 0.990414229834952,
+   "holdout_coverage": 0.739938080495356,
+   "holdout_accuracy_kept": 0.9832635983263598,
+   "holdout_sent_to_human": 0.26006191950464397
+  },
+  {
+   "target_accuracy_on_oof": 0.99,
+   "threshold": 0.9979795479192966,
+   "holdout_coverage": 0.6563467492260062,
+   "holdout_accuracy_kept": 0.9858490566037735,
+   "holdout_sent_to_human": 0.3436532507739938
+  }
+ ],
+ "holdout_sample_f1_0.5_min_one": 0.9126934984520122,
+ "label_audit": {
+  "n_pool": 1415,
+  "n_suspects": 39,
+  "fraction": 0.02756183745583039,
+  "threshold": 0.9,
+  "top_pairs": {
+   "Hip -> Pelvis": 5,
+   "Wrist -> Ankle": 4,
+   "Others -> Chest": 3,
+   "Others -> Feet": 2,
+   "Forearm -> Elbow": 2,
+   "Others -> Sinus": 2,
+   "Chest -> Cervical Spine": 1,
+   "Ankle -> Wrist": 1,
+   "Cervical Spine -> Thoracic Spine": 1,
+   "Abdomen -> Pelvis": 1,
+   "Abdomen -> Chest": 1,
+   "Hand -> Feet": 1,
+   "Finger -> Hand": 1,
+   "Elbow -> Lower Leg": 1,
+   "Elbow -> Forearm": 1
+  },
+  "note": "SUSPECTS only. The model may be wrong; a clinician must review a sample before any claim about label errors."
+ }
+}

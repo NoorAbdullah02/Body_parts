@@ -1,0 +1,4 @@
+\section{Limitations}
+The data come from a single centre and amount to only 1,738 labelled images. The 323-image held-out set has just 1 to 6 positives for several classes, so the per-class numbers are shaky. The COVID and FracAtlas results rest on image-level splits and intervals. Nobody has reviewed the class maps we used for transfer, and no clinician has checked the label audit or the Grad-CAM maps. The private test labels are noisy. Stage 2 uses unlabelled test images (a transductive step) and ensemble weights fitted on the same OOF predictions. The explainability analysis covers one fold per model. Our runs came from several Kaggle accounts, although all of them can be reproduced from the released code. One control, the random-weight probe, gave inconsistent results and is left out. Finally, we did not record a full package list for the Kaggle runs, and we had no external clinical site.
+
+

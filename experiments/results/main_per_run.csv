@@ -1,0 +1,7 @@
+run,chosen_variant,oof_chosen_variant,holdout_sample_mean_f1_0.5_min_one
+swin_tiny_s224,blend,0.914676,0.913313
+densenet121_s256,blend,0.917974,0.922085
+efficientnetv2_s_s256,blend_tta,0.918634,0.917337
+convnext_tiny_s256,blend_tta,0.923416,0.912281
+resnet50_s256_heavy,blend,0.906408,0.910423
+efficientnet_b3_s256_hv,blend_tta,0.913263,0.917234

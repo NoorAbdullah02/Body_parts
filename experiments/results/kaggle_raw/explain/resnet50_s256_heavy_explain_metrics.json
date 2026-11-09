@@ -1,0 +1,41 @@
+{
+ "title": "resnet50_s256_heavy",
+ "weights": "runs/resnet50_s256_heavy_f0/final_ema.pt",
+ "n_images": 323,
+ "holdout_sample_f1_blend": 0.8972136222910218,
+ "target_layer": "body.layer4",
+ "channels_last": false,
+ "gallery_rows": 34,
+ "faithfulness_deletion": {
+  "pairs": 150,
+  "score_cam": {
+   "mean": 0.4262322036308857,
+   "ci_low": 0.38845800243950607,
+   "ci_high": 0.4636135701104338,
+   "n": 150
+  },
+  "score_random_order": {
+   "mean": 0.6301937608921371,
+   "ci_low": 0.5944443909006495,
+   "ci_high": 0.6639157269614767,
+   "n": 150
+  },
+  "deletion_gain_random_minus_cam": {
+   "mean": 0.2039615572612513,
+   "ci_low": 0.17721473324945725,
+   "ci_high": 0.23103503129520153,
+   "n": 150
+  },
+  "note": "mean P(class) over deleting 0-50 % of pixels; lower = more faithful; gain > 0 means CAM beats a random map of the same grid granularity"
+ },
+ "randomization_sanity": {
+  "spearman_trained_vs_random_weights": {
+   "mean": -0.3137189119063553,
+   "ci_low": -0.35484684651215664,
+   "ci_high": -0.27101541973249593,
+   "n": 150
+  },
+  "fraction_abs_rho_below_0.3": 0.38,
+  "note": "low correlation = the map depends on the learned weights (passes the check)"
+ }
+}

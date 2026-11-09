@@ -1,0 +1,38 @@
+\setcounter{table}{7}
+\begin{table}[!ht]\centering\small
+\caption{Suspected label errors in the training pool (out-of-fold, 39 of 1,415 images, 2.8 \%)}\label{tab:audit}
+\resizebox{\ifdim\width>\textwidth\textwidth\else\width\fi}{!}{\begin{tabular}{p{0.64\textwidth}cc}
+\toprule
+\textbf{given label} & \textbf{model says (p >= 0.9)} & \textbf{n} \\
+\midrule
+Hip & Pelvis & 5 \\
+Wrist & Ankle & 4 \\
+Others & Chest & 3 \\
+Others & Feet & 2 \\
+Forearm & Elbow & 2 \\
+Others & Sinus & 2 \\
+Chest & Cervical Spine & 1 \\
+Ankle & Wrist & 1 \\
+Cervical Spine & Thoracic Spine & 1 \\
+Abdomen & Pelvis & 1 \\
+Abdomen & Chest & 1 \\
+Hand & Feet & 1 \\
+Finger & Hand & 1 \\
+Elbow & Lower Leg & 1 \\
+Elbow & Forearm & 1 \\
+Chest & Abdomen & 1 \\
+Lumbar Spine & Others & 1 \\
+Lumbar Spine & Abdomen & 1 \\
+Knee & Feet & 1 \\
+Others & Cervical Spine & 1 \\
+Lumbar Spine+Thoracic Spine & Chest & 1 \\
+Lumbar Spine+Thoracic Spine & Abdomen & 1 \\
+Others & Pelvis & 1 \\
+Others & Thoracic Spine & 1 \\
+Pelvis & Hip & 1 \\
+Pelvis & Others & 1 \\
+Thoracic Spine & Chest & 1 \\
+\bottomrule
+\end{tabular}}
+\par\smallskip{\footnotesize Suspects only: the model may be wrong; none has been reviewed by an expert. The 39 images come from 33 patients.}
+\end{table}

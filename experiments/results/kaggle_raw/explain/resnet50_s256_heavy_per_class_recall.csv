@@ -1,0 +1,23 @@
+class,n_true,recall
+Abdomen,15,1.0
+Ankle,12,0.9166666666666666
+Cervical Spine,15,1.0
+Chest,138,0.9927536231884058
+Clavicles,1,1.0
+Elbow,3,1.0
+Feet,14,1.0
+Finger,4,0.75
+Forearm,3,0.3333333333333333
+Hand,16,1.0
+Hip,6,0.6666666666666666
+Knee,22,0.9090909090909091
+Lower Leg,4,0.75
+Lumbar Spine,14,1.0
+Others,22,0.4090909090909091
+Pelvis,13,0.9230769230769231
+Shoulder,5,0.6
+Sinus,5,1.0
+Skull,2,1.0
+Thigh,3,1.0
+Thoracic Spine,11,0.7272727272727273
+Wrist,26,0.8846153846153846
